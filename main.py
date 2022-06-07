@@ -27,6 +27,7 @@ st.write('')
 if diameter == 0:
   st.write("""## BRL式による予測値t_brl: 外径の値を入力してください""")
 else:
+  #ここでBRL式を計算
   t_brl = pow((0.5 * math * pow(velocity, 2)) / (1.4396 * pow(10, 9) * pow(diameter, 3/2)), 2/3) * 1000
   
   st.write(f"""## BRL式による予測値: {t_brl:.2f}[mm]""")
